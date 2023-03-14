@@ -1,10 +1,6 @@
-namespace DataStructure
-{
-    
-    class Program
-    {
-        static void Main(string[] args)
-        {
+namespace DataStructure{
+    class Test{
+        public void ArrayList(){
             ArrayList test = new ArrayList();
             test.Add(3.16);
             test.Add(5);
@@ -14,4 +10,5 @@ namespace DataStructure
             Console.WriteLine(test.Get(1));
         }
     }
+
 }

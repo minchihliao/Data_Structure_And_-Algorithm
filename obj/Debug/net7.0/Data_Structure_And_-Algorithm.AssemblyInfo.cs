@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ArrayList")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Data_Structure_And_-Algorithm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("ArrayList")]
-[assembly: System.Reflection.AssemblyTitleAttribute("ArrayList")]
+[assembly: System.Reflection.AssemblyProductAttribute("Data_Structure_And_-Algorithm")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Data_Structure_And_-Algorithm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // 由 MSBuild WriteCodeFragment 類別產生。

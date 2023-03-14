@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "ArrayList/1.0.0": {
+      "Data_Structure_And_-Algorithm/1.0.0": {
         "runtime": {
-          "ArrayList.dll": {}
+          "Data_Structure_And_-Algorithm.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "ArrayList/1.0.0": {
+    "Data_Structure_And_-Algorithm/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
