@@ -1,6 +1,9 @@
-namespace DataStructure
+using Question;
+using DataStructure;
+using Algorithm;
+namespace Test
 {
-    class Test
+    public class Test_Data_Structure
     {
         public void ArrayList()
         {
@@ -86,5 +89,197 @@ namespace DataStructure
             Console.Write("Modified Linked list ");
             dll.PrintList();
         }
+
+        public void MyStack_Array()
+        {
+            MyStack_Array stack = new MyStack_Array(3);
+
+            // 推入元素
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+
+            // 彈出元素
+            int x = stack.Pop();  // x = 3
+
+            // 查看堆疊頂部元素
+            int y = stack.Peek(); // y = 2
+
+            Console.WriteLine("x = " + x);
+            Console.WriteLine("y = " + y);
+        }
+        public void MyStack_LinkList()
+        {
+            MyStack_LinkList stack = new MyStack_LinkList();
+
+            // 推入元素
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+
+            // 彈出元素
+            int x = stack.Pop();  // x = 3
+
+            // 查看堆疊頂部元素
+            int y = stack.Peek(); // y = 2
+
+            Console.WriteLine("x = " + x);
+            Console.WriteLine("y = " + y);
+        }
+
+        public void MyQueue_Array()
+        {
+            MyQueue_Array Queue = new MyQueue_Array(3);
+
+            // 推入元素
+            Queue.Enqueue(1);
+            Queue.Enqueue(2);
+            Queue.Enqueue(3);
+
+            // 彈出元素
+            int x = Queue.Dequeue();  // x = 1
+
+            // 查看堆疊頂部元素
+            int y = Queue.Peek(); // y = 2
+
+            Console.WriteLine("x = " + x);
+            Console.WriteLine("y = " + y);
+        }
+
+        public void MyQueue_LinkList()
+        {
+            MyQueue_LinkList Queue = new MyQueue_LinkList();
+
+            // 推入元素
+            Queue.Enqueue(1);
+            Queue.Enqueue(2);
+            Queue.Enqueue(3);
+
+            // 彈出元素
+            int x = Queue.Dequeue();  // x = 1
+
+            // 查看堆疊頂部元素
+            int y = Queue.Peek(); // y = 2
+
+            Console.WriteLine("x = " + x);
+            Console.WriteLine("y = " + y);
+        }
+
+
+    }
+
+
+    public class Test_Algorithm
+    {
+        public void BreathFirstSearch()
+        {
+            BreathFirstSearch BFS = new BreathFirstSearch();
+            BreathFirstSearch.Node node1 = BFS.CreateNode(1);
+            BreathFirstSearch.Node node2 = BFS.CreateNode(2);
+            BreathFirstSearch.Node node3 = BFS.CreateNode(3);
+            BreathFirstSearch.Node node4 = BFS.CreateNode(4);
+            BreathFirstSearch.Node node5 = BFS.CreateNode(5);
+            BreathFirstSearch.Node node6 = BFS.CreateNode(6);
+            node1.AddChildrenNode(node2);
+            node1.AddChildrenNode(node3);
+            node2.AddChildrenNode(node4);
+            node2.AddChildrenNode(node5);
+            node3.AddChildrenNode(node6);
+            BFS.Excute(node1);
+        }
+    }
+
+    public class Test_Array_And_string
+    {
+        public void IsUniqueChars_Array()
+        {
+            Array_And_String arrayAndString = new Array_And_String();
+            string test1 = "absdhrkx";
+            Console.WriteLine(arrayAndString.IsUniqueChars_Array(test1));
+            string test2 = "afgjggg";
+            Console.WriteLine(arrayAndString.IsUniqueChars_Array(test2));
+        }
+
+        public void Permutation()
+        {
+            Array_And_String arrayAndString = new Array_And_String();
+            string source = "abc";
+            string compare = "bca";
+            Console.WriteLine(arrayAndString.Permutation_Array(source, compare));
+        }
+
+        public void ReplaceSpace()
+        {
+            Array_And_String arrayAndString = new Array_And_String();
+            char[] source = "Mr John Smith     ".ToArray();
+            string result = arrayAndString.ReplaceSpace_Count(source, 13);
+            Console.WriteLine(result);
+        }
+
+        public void PernutationOfPalindrome()
+        {
+            Array_And_String arrayAndString = new Array_And_String();
+            string str = "Tact Coa";
+            Console.WriteLine(arrayAndString.isPermutationOfPalindrome_Dict(str));
+        }
+
+        public void OneEditAway()
+        {
+            Array_And_String arrayAndString = new Array_And_String();
+            string str1 = "pale";
+            string str2 = "ale";
+            Console.WriteLine(arrayAndString.IsOneEditAway_Three(str1, str2));
+        }
+
+        public void Compress()
+        {
+            Array_And_String arrayAndString = new Array_And_String();
+            string str1 = "AAAABCDDD";
+            Console.WriteLine(arrayAndString.Compress_WithCompare(str1));
+
+        }
+
+        public void Rotate()
+        {
+            Array_And_String arrayAndString = new Array_And_String();
+            int[,] matrix = new int[,] { { 1, 2 }, { 3, 4 } };
+
+
+            int[,] result = arrayAndString.Rotate(matrix);
+
+            int rows = matrix.GetLength(0);
+            int cols = matrix.GetLength(1);
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < cols; j++)
+                {
+                    Console.Write("{0} ", matrix[i, j]);
+                }
+                Console.WriteLine();
+            }
+
+        }
+
+        public void SetZero()
+        {
+            Array_And_String arrayAndString = new Array_And_String();
+            int[,] matrix = new int[,] { { 1, 0, 3 }, { 3, 4, 5 } };
+
+
+            int[,] result = arrayAndString.SetZero_BooleanArray(matrix);
+
+            int rows = matrix.GetLength(0);
+            int cols = matrix.GetLength(1);
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < cols; j++)
+                {
+                    Console.Write("{0} ", matrix[i, j]);
+                }
+                Console.WriteLine();
+            }
+
+        }
+
     }
 }

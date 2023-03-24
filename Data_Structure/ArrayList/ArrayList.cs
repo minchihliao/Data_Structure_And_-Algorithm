@@ -1,5 +1,5 @@
 namespace DataStructure{
-    class ArrayList{
+    public class ArrayList{
         private object[] data;
         private int count;
 

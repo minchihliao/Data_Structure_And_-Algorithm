@@ -1,6 +1,6 @@
 namespace DataStructure
 {
-    class DoubleNode{
+    public class DoubleNode{
         public int Data;
         public DoubleNode Prev;
         public DoubleNode Next;
