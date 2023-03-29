@@ -282,4 +282,88 @@ namespace Test
         }
 
     }
+
+    public class Test_Linked_List
+    {
+        public void DeleteRepeatNode()
+        {
+            int[] data = { 1, 2, 3, 4, 5, 5, 6, 3 };
+            LinkedList<int> linkedList = new LinkedList<int>(data);
+            Linked_List linked_List = new Linked_List();
+            linkedList = linked_List.DeleteRepeatNode(linkedList);
+            linked_List.Display<int>(linkedList);
+        }
+
+        public void NthToLast()
+        {
+            LinkedListNode head = new LinkedListNode(1);
+            head.next = new LinkedListNode(2);
+            head.next.next = new LinkedListNode(3);
+            head.next.next.next = new LinkedListNode(4);
+            head.next.next.next.next = new LinkedListNode(5);
+            head.next.next.next.next.next = new LinkedListNode(6);
+            Linked_List linked_List = new Linked_List();
+            Console.WriteLine(linked_List.NthToLast(head, 2).data);
+        }
+
+        public void DeleteMidNode()
+        {
+            Linked_List linked_List = new Linked_List();
+            LinkedListNode head = new LinkedListNode(1);
+            head.next = new LinkedListNode(2);
+            head.next.next = new LinkedListNode(3);
+            head.next.next.next = new LinkedListNode(4);
+            head.next.next.next.next = new LinkedListNode(5);
+            head.next.next.next.next.next = new LinkedListNode(6);
+            linked_List.DeleteMidNode(head.next.next.next);
+            linked_List.Display(head);
+        }
+
+        public void Partition()
+        {
+            LinkedListNode head = new LinkedListNode(3);
+            head.next = new LinkedListNode(8);
+            head.next.next = new LinkedListNode(9);
+            head.next.next.next = new LinkedListNode(2);
+            head.next.next.next.next = new LinkedListNode(7);
+            head.next.next.next.next.next = new LinkedListNode(2);
+            Linked_List linked_List = new Linked_List();
+            linked_List.Partition(head, 3);
+            linked_List.Display(head);
+        }
+
+        public void addLists()
+        {
+            LinkedListNode l1 = new LinkedListNode(7);
+            l1.next = new LinkedListNode(1);
+            l1.next.next = new LinkedListNode(6);
+            LinkedListNode l2 = new LinkedListNode(5);
+            l2.next = new LinkedListNode(9);
+            l2.next.next = new LinkedListNode(2);
+            Linked_List linked_List = new Linked_List();
+            LinkedListNode head = linked_List.addLists(l1, l2);
+            linked_List.Display(head);
+        }
+        public void addLists_Recursive()
+        {
+            LinkedListNode l1 = new LinkedListNode(7);
+            l1.next = new LinkedListNode(1);
+            l1.next.next = new LinkedListNode(6);
+            LinkedListNode l2 = new LinkedListNode(5);
+            l2.next = new LinkedListNode(9);
+            l2.next.next = new LinkedListNode(2);
+            Linked_List linked_List = new Linked_List();
+            LinkedListNode head = linked_List.addList_Recursion(l1, l2);
+            linked_List.Display(head);
+        }
+
+        public void IsPalindrome()
+        {
+            LinkedListNode l1 = new LinkedListNode(1);
+            l1.next = new LinkedListNode(3);
+            l1.next.next = new LinkedListNode(1);
+            Linked_List linked_List = new Linked_List();
+            Console.WriteLine(linked_List.IsPalindrome(l1));
+        }
+    }
 }

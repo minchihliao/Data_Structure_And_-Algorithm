@@ -16,11 +16,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Programing\\C#\\Data_Structure_And_-Algorithm\\Data_Structure_And_-Algorithm.csproj",
+      "projectUniqueName": "E:\\Programing\\C#\\Data_Structure_And_Algorithm\\Data_Structure_And_-Algorithm.csproj",
       "projectName": "Data_Structure_And_-Algorithm",
-      "projectPath": "E:\\Programing\\C#\\Data_Structure_And_-Algorithm\\Data_Structure_And_-Algorithm.csproj",
+      "projectPath": "E:\\Programing\\C#\\Data_Structure_And_Algorithm\\Data_Structure_And_-Algorithm.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "E:\\Programing\\C#\\Data_Structure_And_-Algorithm\\obj\\",
+      "outputPath": "E:\\Programing\\C#\\Data_Structure_And_Algorithm\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

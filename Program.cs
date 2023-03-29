@@ -10,7 +10,10 @@ class Program
         //Test_Data_Structure testDataStructure = new Test_Data_Structure();
         //testDataStructure.MyQueue_LinkList();
 
-        Test_Algorithm testAlgorithm = new Test_Algorithm();
-        testAlgorithm.BreathFirstSearch();
+        //Test_Algorithm testAlgorithm = new Test_Algorithm();
+        //testAlgorithm.BreathFirstSearch();
+
+        Test_Linked_List test = new Test_Linked_List();
+        test.IsPalindrome();
     }
 }
