@@ -218,6 +218,33 @@ namespace Test
             node3.AddChildrenNode(node6);
             BFS.Excute(node1);
         }
+
+        public void BinarySearchTree()
+        {
+            BinarySearchTree tree = new BinarySearchTree();
+            tree.Insert(5);
+            tree.Insert(3);
+            tree.Insert(7);
+            tree.Insert(1);
+            tree.Insert(9);
+            Console.Write("InOrder traversal of binary tree is ");
+            tree.InOrder();
+        }
+
+        public void BinaryHeap()
+        {
+            BinaryHeap heap = new BinaryHeap(5);
+            heap.Insert(3);
+            heap.Insert(1);
+            heap.Insert(4);
+            heap.Insert(2);
+            heap.Insert(5);
+            Console.WriteLine(heap.Remove());
+            Console.WriteLine(heap.Remove());
+            Console.WriteLine(heap.Remove());
+            Console.WriteLine(heap.Remove());
+            Console.WriteLine(heap.Remove());
+        }
     }
 
     public class Test_Array_And_string
