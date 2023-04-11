@@ -1,70 +1,83 @@
 namespace DataStructure
 {
-    public  class Node{
+    public class LinkedListNode
+    {
         public int data;
-        public Node next;
-        public Node(int value){
+        public LinkedListNode next;
+        public LinkedListNode(int value)
+        {
             this.data = value;
             this.next = null;
         }
     }
 
-    class MyLinkList{
-        private Node head;
-        public Node Head {get{return head;}}
+    class MyLinkList
+    {
+        private LinkedListNode head;
+        public LinkedListNode Head { get { return head; } }
 
-        public void Push(int newValue){
-            Node newHead = new Node(newValue);
+        public void Push(int newValue)
+        {
+            LinkedListNode newHead = new LinkedListNode(newValue);
             newHead.next = head;
             head = newHead;
         }
 
-        public void Insert(Node prevNode,int newValue){
-            if(prevNode ==null){
+        public void Insert(LinkedListNode prevNode, int newValue)
+        {
+            if (prevNode == null)
+            {
                 Console.WriteLine("The given previous node"
                           + " cannot be null");
                 return;
             }
-            Node newNode = new Node(newValue);
+            LinkedListNode newNode = new LinkedListNode(newValue);
             newNode.next = prevNode.next;
             prevNode.next = newNode;
         }
 
-        public void Append(int newValue){
-            Node newLast = new Node(newValue);
-            if (head ==null)
+        public void Append(int newValue)
+        {
+            LinkedListNode newLast = new LinkedListNode(newValue);
+            if (head == null)
                 head = newLast;
-            Node last = head;
-            while(last.next!=null){
+            LinkedListNode last = head;
+            while (last.next != null)
+            {
                 last = last.next;
             }
             last.next = newLast;
         }
 
-        public void DeleteNode(int value){
+        public void DeleteNode(int value)
+        {
 
-            Node temp = head;
-            Node prev = null;
-            
-            if( temp !=null && head.data == value){
+            LinkedListNode temp = head;
+            LinkedListNode prev = null;
+
+            if (temp != null && head.data == value)
+            {
                 head = head.next;
                 return;
             }
 
-            while (temp !=null && temp.data !=value){
+            while (temp != null && temp.data != value)
+            {
                 prev = temp;
                 temp = temp.next;
             }
 
-            if(temp==null)
+            if (temp == null)
                 return;
 
             prev.next = temp.next;
         }
 
-        public void PrintList(){
-            Node temp = head;
-            while(temp!=null){
+        public void PrintList()
+        {
+            LinkedListNode temp = head;
+            while (temp != null)
+            {
                 Console.WriteLine(temp.data);
                 temp = temp.next;
             }
