@@ -219,6 +219,23 @@ namespace Test
             BFS.Excute(node1);
         }
 
+        public void DepthFirstSearch()
+        {
+            DepthFirstSearch DFS = new DepthFirstSearch();
+            DepthFirstSearch.Node node1 = DFS.CreateNode(1);
+            DepthFirstSearch.Node node2 = DFS.CreateNode(2);
+            DepthFirstSearch.Node node3 = DFS.CreateNode(3);
+            DepthFirstSearch.Node node4 = DFS.CreateNode(4);
+            DepthFirstSearch.Node node5 = DFS.CreateNode(5);
+            DepthFirstSearch.Node node6 = DFS.CreateNode(6);
+            node1.AddChildrenNode(node2);
+            node1.AddChildrenNode(node3);
+            node2.AddChildrenNode(node4);
+            node2.AddChildrenNode(node5);
+            node3.AddChildrenNode(node6);
+            DFS.Excute(node1);
+        }
+
         public void BinarySearchTree()
         {
             BinarySearchTree tree = new BinarySearchTree();

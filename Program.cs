@@ -11,7 +11,7 @@ class Program
         //testDataStructure.MyTrie();
 
         Test_Algorithm testAlgorithm = new Test_Algorithm();
-        testAlgorithm.BinaryHeap();
+        testAlgorithm.DepthFirstSearch();
 
         //Test_Linked_List test = new Test_Linked_List();
         //test.IsPalindrome();
